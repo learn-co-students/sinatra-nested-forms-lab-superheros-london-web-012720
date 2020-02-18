@@ -9,15 +9,11 @@ class App < Sinatra::Base
     erb :super_hero
     end
 
-    post '/team' do
-    # neww = Superhero.new
-    # = neww.build(params
-    @tn = params["tn"]
-    @tm = params["tm"]
-
-    @tn1 =  params["team"]["members"][0]["name"]
-
+    post '/teams' do 
     erb :team
     end
 
 end
+
+
+ 
