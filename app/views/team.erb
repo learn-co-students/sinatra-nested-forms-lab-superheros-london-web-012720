@@ -1,3 +1,17 @@
+<h1><%= @team_name%></h1>
+
+<h2>Team Motto:<%=@team_motto%>!</h2>
+
+
+<%@name.each_with_index do |n, i|%>
+<h2><%= @name[i]%></h2>
+<h3><%=@power[i]%></h3>
+<h3><%=@bio[i]%></h3>
+<%end%>
+
+
+
+
 
 
 
